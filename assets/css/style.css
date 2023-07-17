@@ -2,7 +2,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Lumanosimo', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -21,10 +21,27 @@ body {
     background-position: center;
 }
 
-.heading {
+.hidden {
+    display: none;
+}
+
+/* Headings */
+
+h1, h2 {
+    font-family: 'Lumanosimo', sans-serif;
+}
+
+h1 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+h2 {
+    font-size: 3rem;
+    padding-top: 50px;
+}
+
+/* Shared styles */
 
 .main-container {
     height: 600px;
@@ -34,10 +51,8 @@ body {
     margin-right: 15%;
 }
 
-#question {
-    padding-top: 80px;
-    height: 380px;
-    margin-bottom: 40px;
+.main-container > p {
+    margin: 50px 10% 50px 10%;
 }
 
 .btn {
@@ -45,11 +60,32 @@ body {
     font-size: 2.2rem;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(0, 0, 0, 0.75);
-    width: 40%;
     height: 50px;
-    margin-bottom: 10px;
     cursor: pointer;
 }
+
+/* Intro window */
+
+.intro-btn {
+    display: block;
+    width: 30%;
+    margin: 20px 35% 0 35%;
+}
+
+/* Game window */
+
+#question {
+    padding-top: 80px;
+    height: 380px;
+    margin-bottom: 40px;
+}
+
+.game-btn {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+/* Score */
 
 #score-container {
     margin-top: 25px;
@@ -69,10 +105,25 @@ body {
 /* For small screen sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
 
-    .heading {
+    h1 {
         font-size: 3.5rem;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .main-container > p {
+        font-size: 2rem;
+        margin: 30px 5% 30px 5%;
+    }
+    
+    .intro-btn {
+        font-size: 1.8rem;
+        width: 40%;
+        margin: 20px 30% 0 30%;
     }
 
     #question {
@@ -81,7 +132,7 @@ body {
         margin-bottom: 25px;
     }
 
-    .btn {
+    .game-btn {
         font-size: 1.8rem;
         width: 70%;
     }
@@ -94,7 +145,16 @@ body {
 /* For small screen sizes from 480px wide and down */
 @media screen and (max-width: 480px) {
 
-    .main-container {
+    .intro-btn {
+        width: 60%;
+        margin: 20px 20% 0 20%;
+    }
+
+    .main-container > p {
+        font-size: 1.8rem;
+    }
+
+    #game-window {
         height: 580px;
         width: 80%;
         margin-left: 10%;
@@ -105,7 +165,7 @@ body {
         height: 270px;
     }
 
-    .btn {
+    .game-btn {
         width: 80%;
     }
 
