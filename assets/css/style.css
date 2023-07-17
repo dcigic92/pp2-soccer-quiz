@@ -2,7 +2,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Lumanosimo';
+    font-family: 'Lumanosimo', sans-serif;
 }
 
 * {
@@ -14,12 +14,11 @@ html {
 
 body {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     background-image: url(../images/stadium.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 }
 
 .heading {
@@ -36,18 +35,15 @@ body {
 }
 
 #question {
-    padding-top: 100px;
-    height: 400px;
-}
-
-#answer-containter {
-    margin-top: 50px;
+    padding-top: 80px;
+    height: 380px;
+    margin-bottom: 40px;
 }
 
 .btn {
     color: white;
     font-size: 2.2rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     background-color: rgba(0, 0, 0, 0.75);
     width: 40%;
     height: 50px;
@@ -55,7 +51,7 @@ body {
     cursor: pointer;
 }
 
-.score-container {
+#score-container {
     margin-top: 25px;
 }
 
@@ -66,4 +62,57 @@ body {
     padding: 5px 20px;
     margin-left: 30px;
     margin-right: 30px;
+}
+
+/* Media queries */
+
+/* For small screen sizes from 768px wide and down */
+@media screen and (max-width: 768px) {
+
+    .heading {
+        font-size: 3.5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #question {
+        padding-top: 40px;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        width: 70%;
+    }
+
+    #score-container {
+        margin-top: 20px;
+    }
+}
+
+/* For small screen sizes from 480px wide and down */
+@media screen and (max-width: 480px) {
+
+    .main-container {
+        height: 580px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #question {
+        height: 270px;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .scores {
+        font-size: 1.5rem;
+        display: block;
+        padding: 5px 0;
+        margin: 0 30% 10px 30%;
+    }
 }
