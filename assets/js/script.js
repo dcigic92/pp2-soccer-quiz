@@ -16,13 +16,47 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function openGameWindow() {
-
+    document.getElementById("game-window").style.display = "block";
+    document.getElementById("score-container").style.display = "block";
+    displayQuestion()
 }
 
 function openRulesWindow() {
-
+    document.getElementById("rules-window").style.display = "block";
 }
 
 function openHighscoreWindow() {
+    document.getElementById("highscore-window").style.display = "block";
+}
+
+function displayQuestion() {
+    
+}
+
+function checkAnswer() {
+    
+}
+
+function incrementCorrect() {
+    
+}
+
+function incrementWrong() {
+    
+}
+
+function disableButtons() {
+    
+}
+
+function enableButtons() {
+    
+}
+
+function nextQuestion() {
+
+}
+
+function gameOver() {
 
 }
