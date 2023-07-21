@@ -44,8 +44,24 @@ function displayQuestion() {
     questionsList.splice(randomIndex, 1);
 }
 
-function checkAnswer() {
-    
+function checkAnswer(event) {
+    const selectedOption = event.target;
+    const isCorrect = selectedOption.getAttribute("data-correct") === "true";
+
+    if (isCorrect) {
+        incrementCorrect()
+    } else {
+        incrementWrong()
+    }
+
+    if (
+        parseInt(document.getElementById("correct").innerText) +
+        parseInt(document.getElementById("wrong").innerText) === 10
+    ) {
+        setTimeout(gameOver, 1500)
+    } else {
+        setTimeout(nextQuestion, 1500)
+    }
 }
 
 function incrementCorrect() {
@@ -65,7 +81,7 @@ function enableButtons() {
 }
 
 function nextQuestion() {
-
+    displayQuestion();
 }
 
 function gameOver() {
