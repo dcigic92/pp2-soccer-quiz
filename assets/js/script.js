@@ -30,7 +30,18 @@ function openHighscoreWindow() {
 }
 
 function displayQuestion() {
-    
+    let randomIndex = Math.floor(Math.random() * questionsList.length)
+    document.getElementById("question").src = questionsList[randomIndex].q
+    let buttons = document.getElementsByClassName("game-btn");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].innerHTML = questionsList[randomIndex].a[i].option
+        buttons[i].setAttribute(
+            "data-correct",
+            questionsList[randomIndex].a[i].correct
+        );
+        buttons[i].addEventListener("click", checkAnswer);
+    }
+    questionsList.splice(randomIndex, 1);
 }
 
 function checkAnswer() {
