@@ -54,6 +54,8 @@ function checkAnswer(event) {
         incrementWrong()
     }
 
+    disableButtons()
+
     if (
         parseInt(document.getElementById("correct").innerText) +
         parseInt(document.getElementById("wrong").innerText) === 10
@@ -75,14 +77,21 @@ function incrementWrong() {
 }
 
 function disableButtons() {
-    
+    const buttons = document.getElementsByClassName("game-btn");
+    for (let button of buttons) {
+        button.disabled = true;
+    }
 }
 
 function enableButtons() {
-    
+    const buttons = document.getElementsByClassName("game-btn");
+    for (let button of buttons) {
+        button.disabled = false;
+    }
 }
 
 function nextQuestion() {
+    enableButtons();
     displayQuestion();
 }
 
