@@ -30,8 +30,8 @@ function openHighscoreWindow() {
 }
 
 function displayQuestion() {
-    let randomIndex = Math.floor(Math.random() * questionsList.length)
-    document.getElementById("question").src = questionsList[randomIndex].q
+    let randomIndex = Math.floor(Math.random() * questionsList.length);
+    document.getElementById("question").src = questionsList[randomIndex].q;
     let buttons = document.getElementsByClassName("game-btn");
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].innerHTML = questionsList[randomIndex].a[i].option
@@ -65,11 +65,13 @@ function checkAnswer(event) {
 }
 
 function incrementCorrect() {
-    
+    let correctScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++correctScore;
 }
 
 function incrementWrong() {
-    
+    let wrongScore = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText = ++wrongScore;
 }
 
 function disableButtons() {
