@@ -49,9 +49,13 @@ function checkAnswer(event) {
     const isCorrect = selectedOption.getAttribute("data-correct") === "true";
 
     if (isCorrect) {
-        incrementCorrect()
+        selectedOption.style.background = "green"
+        setTimeout(removeColor, 400, selectedOption)
+        setTimeout(incrementCorrect, 400)
     } else {
-        incrementWrong()
+        selectedOption.style.background = "red"
+        setTimeout(removeColor, 400, selectedOption)
+        setTimeout(incrementWrong, 400)
     }
 
     disableButtons()
@@ -88,6 +92,10 @@ function enableButtons() {
     for (let button of buttons) {
         button.disabled = false;
     }
+}
+
+function removeColor(button) {
+    button.style.background = "rgba(0, 0, 0, 0.75)"
 }
 
 function nextQuestion() {
