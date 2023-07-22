@@ -96,5 +96,9 @@ function nextQuestion() {
 }
 
 function gameOver() {
-
+    document.getElementById("game-window").style.display = "none";
+    document.getElementById("score-container").style.display = "none";
+    document.getElementById("game-over-window").style.display = "block";
+    const finalScore = parseInt(document.getElementById("correct").innerText)
+    document.getElementById("final-score").innerText = `Your final score is ${finalScore}`;
 }
