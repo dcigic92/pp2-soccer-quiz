@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function openGameWindow() {
     document.getElementById("game-window").style.display = "block";
     document.getElementById("score-container").style.display = "block";
-    displayQuestion()
+    displayQuestion();
 }
 
 function openRulesWindow() {
@@ -27,6 +27,8 @@ function openRulesWindow() {
 
 function openHighscoreWindow() {
     document.getElementById("highscore-window").style.display = "block";
+    const highscore = getHighscore();
+    document.getElementById("highscore").innerText = `${highscore}`;
 }
 
 function displayQuestion() {
@@ -49,24 +51,24 @@ function checkAnswer(event) {
     const isCorrect = selectedOption.getAttribute("data-correct") === "true";
 
     if (isCorrect) {
-        selectedOption.style.background = "green"
-        setTimeout(removeColor, 400, selectedOption)
-        setTimeout(incrementCorrect, 400)
+        selectedOption.style.background = "green";
+        setTimeout(removeColor, 400, selectedOption);
+        incrementCorrect();
     } else {
-        selectedOption.style.background = "red"
-        setTimeout(removeColor, 400, selectedOption)
-        setTimeout(incrementWrong, 400)
+        selectedOption.style.background = "red";
+        setTimeout(removeColor, 400, selectedOption);
+        incrementWrong();
     }
 
-    disableButtons()
+    disableButtons();
 
     if (
         parseInt(document.getElementById("correct").innerText) +
         parseInt(document.getElementById("wrong").innerText) === 10
     ) {
-        setTimeout(gameOver, 1500)
+        setTimeout(gameOver, 1500);
     } else {
-        setTimeout(nextQuestion, 1500)
+        setTimeout(nextQuestion, 1500);
     }
 }
 
@@ -95,7 +97,7 @@ function enableButtons() {
 }
 
 function removeColor(button) {
-    button.style.background = "rgba(0, 0, 0, 0.75)"
+    button.style.background = "rgba(0, 0, 0, 0.75)";
 }
 
 function nextQuestion() {
@@ -107,6 +109,21 @@ function gameOver() {
     document.getElementById("game-window").style.display = "none";
     document.getElementById("score-container").style.display = "none";
     document.getElementById("game-over-window").style.display = "block";
-    const finalScore = parseInt(document.getElementById("correct").innerText)
+    const finalScore = parseInt(document.getElementById("correct").innerText);
     document.getElementById("final-score").innerText = `Your final score is ${finalScore}`;
+    updateHighscore();
+}
+
+function getHighscore() {
+    const highscore = localStorage.getItem("highscore");
+    return highscore !== null ? highscore : 0;
+}
+
+function updateHighscore() {
+    const currentScore = parseInt(document.getElementById("correct").innerText);
+    const highscore = getHighscore();
+
+    if (currentScore > highscore) {
+        localStorage.setItem("highscore", currentScore);
+    }
 }
