@@ -1,8 +1,7 @@
 // Array with questions and answers
-
 const questionsList = [
     {
-        q: "./assets/images/logo/albania.png",
+        q: "./assets/images/logo/albania.webp",
         a: [ 
             { option: "A: Serbia", correct: false },
             { option: "B: Albania", correct: true },
@@ -11,7 +10,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/algeria.png",
+        q: "./assets/images/logo/algeria.webp",
         a: [ 
             { option: "A: Tunisia", correct: false },
             { option: "B: Turkey", correct: false },
@@ -20,7 +19,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/argentina.png",
+        q: "./assets/images/logo/argentina.webp",
         a: [ 
             { option: "A: Argetina", correct: true },
             { option: "B: Uruguay", correct: false },
@@ -29,7 +28,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/austria.png",
+        q: "./assets/images/logo/austria.webp",
         a: [ 
             { option: "A: Switzerland", correct: false },
             { option: "B: Austria", correct: true },
@@ -38,7 +37,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/brazil.png",
+        q: "./assets/images/logo/brazil.webp",
         a: [ 
             { option: "A: South Africa", correct: false },
             { option: "B: Jamaica", correct: false },
@@ -47,7 +46,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/colombia.png",
+        q: "./assets/images/logo/colombia.webp",
         a: [ 
             { option: "A: Ecuador", correct: false },
             { option: "B: Venezuela", correct: false },
@@ -56,7 +55,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/costa_rica.png",
+        q: "./assets/images/logo/costa_rica.webp",
         a: [ 
             { option: "A: Costa Rica", correct: true },
             { option: "B: Croatia", correct: false },
@@ -65,7 +64,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/croatia.png",
+        q: "./assets/images/logo/croatia.webp",
         a: [ 
             { option: "A: Serbia", correct: false },
             { option: "B: Croatia", correct: true },
@@ -74,7 +73,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/czech_republic.png",
+        q: "./assets/images/logo/czech_republic.webp",
         a: [ 
             { option: "A: Wales", correct: false },
             { option: "B: England", correct: false },
@@ -83,7 +82,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/england.png",
+        q: "./assets/images/logo/england.webp",
         a: [ 
             { option: "A: England", correct: true },
             { option: "B: Wales", correct: false },
@@ -92,7 +91,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/finland.png",
+        q: "./assets/images/logo/finland.webp",
         a: [ 
             { option: "A: Denmark", correct: false },
             { option: "B: Estonia", correct: false },
@@ -101,7 +100,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/france.png",
+        q: "./assets/images/logo/france.webp",
         a: [ 
             { option: "A: Wales", correct: false },
             { option: "B: Belgium", correct: false },
@@ -110,7 +109,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/germany.png",
+        q: "./assets/images/logo/germany.webp",
         a: [ 
             { option: "A: Germany", correct: true },
             { option: "B: Austria", correct: false },
@@ -119,7 +118,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/greece.png",
+        q: "./assets/images/logo/greece.webp",
         a: [ 
             { option: "A: Montenegro", correct: false },
             { option: "B: Bulgaria", correct: false },
@@ -128,7 +127,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/iceland.png",
+        q: "./assets/images/logo/iceland.webp",
         a: [ 
             { option: "A: Norway", correct: false },
             { option: "B: Greece", correct: false },
@@ -137,7 +136,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/morocco.png",
+        q: "./assets/images/logo/morocco.webp",
         a: [ 
             { option: "A: Morocco", correct: true },
             { option: "B: Algeria", correct: false },
@@ -146,7 +145,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/netherlands.png",
+        q: "./assets/images/logo/netherlands.webp",
         a: [ 
             { option: "A: Netherlands", correct: true },
             { option: "B: Spain", correct: false },
@@ -155,7 +154,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/norway.png",
+        q: "./assets/images/logo/norway.webp",
         a: [ 
             { option: "A: Finland", correct: false },
             { option: "B: Denmark", correct: false },
@@ -164,7 +163,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/peru.png",
+        q: "./assets/images/logo/peru.webp",
         a: [ 
             { option: "A: Bolivia", correct: false },
             { option: "B: Poland", correct: false },
@@ -173,7 +172,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/poland.png",
+        q: "./assets/images/logo/poland.webp",
         a: [ 
             { option: "A: Albania", correct: false },
             { option: "B: Serbia", correct: false },
@@ -182,7 +181,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/portugal.png",
+        q: "./assets/images/logo/portugal.webp",
         a: [ 
             { option: "A: Peru", correct: false },
             { option: "B: France", correct: false },
@@ -191,7 +190,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/serbia.png",
+        q: "./assets/images/logo/serbia.webp",
         a: [ 
             { option: "A: Poland", correct: false },
             { option: "B: Montenegro", correct: false },
@@ -200,7 +199,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/slovakia.png",
+        q: "./assets/images/logo/slovakia.webp",
         a: [ 
             { option: "A: Slovenia", correct: false },
             { option: "B: Czech Republic", correct: false },
@@ -209,7 +208,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/south_korea.png",
+        q: "./assets/images/logo/south_korea.webp",
         a: [ 
             { option: "A: South Korea", correct: true },
             { option: "B: North Korea", correct: false },
@@ -218,7 +217,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/spain.png",
+        q: "./assets/images/logo/spain.webp",
         a: [ 
             { option: "A: Spain", correct: true },
             { option: "B: Belgium", correct: false },
@@ -227,7 +226,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/sweden.png",
+        q: "./assets/images/logo/sweden.webp",
         a: [ 
             { option: "A: Slovenia", correct: false },
             { option: "B: Switzerland", correct: false },
@@ -236,7 +235,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/switzerland.png",
+        q: "./assets/images/logo/switzerland.webp",
         a: [ 
             { option: "A: Slovenia", correct: false },
             { option: "B: Switzerland", correct: true },
@@ -245,7 +244,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/turkey.png",
+        q: "./assets/images/logo/turkey.webp",
         a: [ 
             { option: "A: Tunisia", correct: false },
             { option: "B: Turkey", correct: true },
@@ -254,7 +253,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/uruguay.png",
+        q: "./assets/images/logo/uruguay.webp",
         a: [ 
             { option: "A: Argentina", correct: false },
             { option: "B: Bolivia", correct: false },
@@ -263,7 +262,7 @@ const questionsList = [
         ],
     },
     {
-        q: "./assets/images/logo/wales.png",
+        q: "./assets/images/logo/wales.webp",
         a: [ 
             { option: "A: Wales", correct: true },
             { option: "B: England", correct: false },
