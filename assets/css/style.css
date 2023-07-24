@@ -49,6 +49,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.65);
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 20px;
 }
 
 .main-container > p {
@@ -66,7 +67,7 @@ h2 {
 
 /* Intro window */
 
-.intro-btn {
+.menu-btn {
     display: block;
     width: 30%;
     margin: 20px 35% 0 35%;
@@ -74,13 +75,29 @@ h2 {
 
 /* Game window */
 
+#game-window {
+    position: relative;
+}
+
+#exit-btn {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
 #question {
     padding-top: 80px;
     height: 380px;
     margin-bottom: 40px;
 }
 
-.game-btn {
+.answer-btn {
     width: 40%;
     margin-bottom: 10px;
 }
@@ -88,7 +105,7 @@ h2 {
 /* Score */
 
 #score-container {
-    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 .scores {
@@ -120,7 +137,7 @@ h2 {
         margin: 30px 5% 30px 5%;
     }
     
-    .intro-btn {
+    .menu-btn {
         font-size: 1.8rem;
         width: 40%;
         margin: 20px 30% 0 30%;
@@ -132,20 +149,16 @@ h2 {
         margin-bottom: 25px;
     }
 
-    .game-btn {
+    .answer-btn {
         font-size: 1.8rem;
         width: 70%;
-    }
-
-    #score-container {
-        margin-top: 20px;
     }
 }
 
 /* For small screen sizes from 480px wide and down */
 @media screen and (max-width: 480px) {
 
-    .intro-btn {
+    .menu-btn {
         width: 60%;
         margin: 20px 20% 0 20%;
     }
@@ -165,7 +178,7 @@ h2 {
         height: 270px;
     }
 
-    .game-btn {
+    .answer-btn {
         width: 80%;
     }
 

@@ -10,22 +10,23 @@
     <h1>Soccer Quiz</h1>
 
     <!-- intro window -->
-    <div id="intro-window" class="main-container">
+    <div id="menu-window" class="main-container">
         <h2>Welcome to our Soccer Quiz!</h2>
         <p>Test your soccer knowledge and answer on 10 questions about national team logos.</p>
-        <button class="btn intro-btn" id="start-btn">Start</button>
-        <button class="btn intro-btn" id="rules-btn">Rules</button>
-        <button class="btn intro-btn" id="highscore-btn">Highscore</button>
+        <button class="btn menu-btn" id="start-btn">Start</button>
+        <button class="btn menu-btn" id="rules-btn">Rules</button>
+        <button class="btn menu-btn" id="highscore-btn">Highscore</button>
     </div>
 
     <!-- game window -->
     <div id="game-window" class="main-container hidden">
+        <button id="exit-btn" class="home-btn">X</button>
         <img src="" alt="" id="question">
         <div id="answer-containter">
-            <button class="btn game-btn" id="btn-a"></button>
-            <button class="btn game-btn" id="btn-b"></button>
-            <button class="btn game-btn" id="btn-c"></button>
-            <button class="btn game-btn" id="btn-d"></button>
+            <button class="btn answer-btn"></button>
+            <button class="btn answer-btn"></button>
+            <button class="btn answer-btn"></button>
+            <button class="btn answer-btn"></button>
         </div>
     </div>
 
@@ -41,21 +42,21 @@
         <p>Rule number 1</p>
         <p>Rule number 2</p>
         <p>Rule number 3</p>
-        <button onclick="location.href = '/';" class="btn intro-btn">Go Back</button>
+        <button class="btn menu-btn home-btn">Home</button>
     </div>
 
     <!-- highscore window -->
     <div id="highscore-window" class="main-container hidden">
         <h2>Highscore!</h2>
         <p id="highscore"></p>
-        <button onclick="location.href = '/';" class="btn intro-btn">Go Back</button>
+        <button class="btn menu-btn home-btn">Home</button>
     </div>
 
     <!-- game over window -->
     <div id="game-over-window" class="main-container hidden">
         <h2>You have completed 10 questions.</h2>
         <p id="final-score"></p>
-        <button onclick="location.href = '/';" class="btn intro-btn">Go Back</button>
+        <button class="btn menu-btn home-btn">Home</button>
     </div>
 
     <script src="assets/js/script.js"></script>

@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByClassName("intro-btn");
+    let menuButtons = document.getElementsByClassName("menu-btn");
+    let homeButtons = document.getElementsByClassName("home-btn");
 
-    for (let button of buttons) {
+    for (let button of homeButtons) {
         button.addEventListener("click", function() {
-            document.getElementById("intro-window").style.display = "none";
+            window.location.reload()
+        })
+    }
+
+    for (let button of menuButtons) {
+        button.addEventListener("click", function() {
+            document.getElementById("menu-window").style.display = "none";
             if (this.getAttribute("id") === "start-btn") {
                 openGameWindow();
             } else if (this.getAttribute("id") === "rules-btn") {
@@ -34,13 +41,10 @@ function openHighscoreWindow() {
 function displayQuestion() {
     let randomIndex = Math.floor(Math.random() * questionsList.length);
     document.getElementById("question").src = questionsList[randomIndex].q;
-    let buttons = document.getElementsByClassName("game-btn");
+    let buttons = document.getElementsByClassName("answer-btn");
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].innerHTML = questionsList[randomIndex].a[i].option
-        buttons[i].setAttribute(
-            "data-correct",
-            questionsList[randomIndex].a[i].correct
-        );
+        buttons[i].innerHTML = questionsList[randomIndex].a[i].option;
+        buttons[i].setAttribute("data-correct", questionsList[randomIndex].a[i].correct);
         buttons[i].addEventListener("click", checkAnswer);
     }
     questionsList.splice(randomIndex, 1);
@@ -83,14 +87,14 @@ function incrementWrong() {
 }
 
 function disableButtons() {
-    const buttons = document.getElementsByClassName("game-btn");
+    const buttons = document.getElementsByClassName("answer-btn");
     for (let button of buttons) {
         button.disabled = true;
     }
 }
 
 function enableButtons() {
-    const buttons = document.getElementsByClassName("game-btn");
+    const buttons = document.getElementsByClassName("answer-btn");
     for (let button of buttons) {
         button.disabled = false;
     }
