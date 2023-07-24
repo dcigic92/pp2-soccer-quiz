@@ -1,3 +1,5 @@
+// Array with questions and answers
+
 const questionsList = [
     {
         q: "./assets/images/logo/albania.png",

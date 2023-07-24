@@ -16,13 +16,8 @@ body {
     text-align: center;
     font-size: 2.5rem;
     color: white;
-    background-image: url(../images/stadium.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hidden {
-    display: none;
+    background: url(../images/stadium.jpg) no-repeat center center fixed; 
+    background-size: cover;
 }
 
 /* Headings */
@@ -39,21 +34,28 @@ h1 {
 h2 {
     font-size: 3rem;
     padding-top: 50px;
+    margin-bottom: 40px;
 }
 
 /* Shared styles */
 
+.hidden {
+    display: none;
+}
+
 .main-container {
-    height: 600px;
     width: 70%;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.65);
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 20px;
+    padding-bottom: 15px;
+    overflow: auto;
 }
 
 .main-container > p {
-    margin: 50px 10% 50px 10%;
+    margin: 0 10% 50px 10%;
 }
 
 .btn {
@@ -65,12 +67,11 @@ h2 {
     cursor: pointer;
 }
 
-/* Intro window */
+/* Menu window */
 
 .menu-btn {
-    display: block;
     width: 30%;
-    margin: 20px 35% 0 35%;
+    margin: 10px 35% 10px 35%;
 }
 
 /* Game window */
@@ -117,6 +118,19 @@ h2 {
     margin-right: 30px;
 }
 
+/* Instructions window */
+
+#instructions-list {
+    margin-bottom: 50px;
+}
+
+#instructions-list > li {
+    text-align: left;
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 0 15% 20px 15%;
+}
+
 /* Media queries */
 
 /* For small screen sizes from 768px wide and down */
@@ -135,6 +149,14 @@ h2 {
     .main-container > p {
         font-size: 2rem;
         margin: 30px 5% 30px 5%;
+    }
+
+    #instructions-list {
+        margin-bottom: 30px;
+    }
+
+    #instructions-list > li {
+        font-size: 2rem;
     }
     
     .menu-btn {
@@ -163,23 +185,20 @@ h2 {
         margin: 20px 20% 0 20%;
     }
 
-    .main-container > p {
-        font-size: 1.8rem;
-    }
-
-    #game-window {
-        height: 580px;
+    .main-container {
+        height: 500px;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
 
     #question {
-        height: 270px;
+        height: 240px;
     }
 
     .answer-btn {
         width: 80%;
+        height: 40px;
     }
 
     .scores {
