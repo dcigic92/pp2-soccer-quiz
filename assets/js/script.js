@@ -54,12 +54,14 @@ function openHighestScoreWindow() {
 }
 
 /**
+ * Calls incrementQuestionCounter function.
  * Generates random number 0-29 and uses it as index for questions list.
  * Gets question and answers.
  * Adds attribute with true or false value to each button.
  * Adds event listener to each button.
  */
 function displayQuestion() {
+    incrementQuestionCounter()
     let randomIndex = Math.floor(Math.random() * questionsList.length);
     document.getElementById("question").src = questionsList[randomIndex].q;
     let buttons = document.getElementsByClassName("answer-btn");
@@ -70,6 +72,12 @@ function displayQuestion() {
     }
     // Removes question from the list
     questionsList.splice(randomIndex, 1);
+}
+
+// Gets question counter from the DOM and increments it by 1
+function incrementQuestionCounter() {
+    let questionCounter = parseInt(document.getElementById("question-counter").innerText);
+    document.getElementById("question-counter").innerText = ++questionCounter;
 }
 
 /**
@@ -95,10 +103,8 @@ function checkAnswer(event) {
 
     disableButtons();
 
-    if (
-        parseInt(document.getElementById("correct").innerText) +
-        parseInt(document.getElementById("wrong").innerText) === 10
-    ) {
+    const questionCounter = parseInt(document.getElementById("question-counter").innerText)
+    if (questionCounter === 10) {
         setTimeout(gameOver, 1500);
     } else {
         setTimeout(nextQuestion, 1500);

@@ -51,6 +51,10 @@ h2 {
     display: none;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .main-container {
     width: 70%;
     height: 70%;
@@ -99,10 +103,20 @@ h2 {
     cursor: pointer;
 }
 
+#QuestionInfo {
+    font-size: 2rem;
+    width: fit-content;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
 #question {
     height: 70%;
     margin: 0 auto;
-    padding: 4% 0 4% 0;
+    padding: 6% 0 4% 0;
 }
 
 #answer-containter {
@@ -152,7 +166,7 @@ h2 {
 @media screen and (max-width: 992px) {
 
     #question {
-        padding: 6% 0 6% 0;
+        padding: 8% 0 6% 0;
     }
 
     .answer-btn {
@@ -184,8 +198,13 @@ h2 {
         width: 50%;
     }
 
+    #QuestionInfo {
+        left: 4%;
+    }
+
     #question {
         height: 55%;
+        padding: 12% 0 6% 0;
     }
 
     #answer-containter {
@@ -217,7 +236,11 @@ h2 {
     }
 
     #question {
-        padding: 15% 0 10% 0;
+        padding: 20% 0 10% 0;
+    }
+
+    #QuestionInfo {
+        font-size: 1.8rem;
     }
 
     .scores {
@@ -249,10 +272,14 @@ h2 {
     }
 
     #question {
-        padding: 20% 0 15% 0;
+        padding: 22% 0 15% 0;
     }
 
     .answer-btn {
         width: 80%;
+    }
+
+    .scores {
+        width: 40%;
     }
 }
