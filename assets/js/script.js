@@ -133,7 +133,7 @@ function enableButtons() {
     }
 }
 
-// Removes the color of tthe selected answer button
+// Removes the color of the selected answer button
 function removeColor(button) {
     button.style.background = "rgba(0, 0, 0, 0.75)";
 }

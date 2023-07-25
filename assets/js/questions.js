@@ -158,7 +158,7 @@ const questionsList = [
         a: [ 
             { option: "A: Finland", correct: false },
             { option: "B: Denmark", correct: false },
-            { option: "C: North Macedonia", correct: false },
+            { option: "C: Macedonia", correct: false },
             { option: "D: Norway", correct: true },
         ],
     },
