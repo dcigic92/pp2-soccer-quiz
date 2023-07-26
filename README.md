@@ -8,6 +8,17 @@
 
 ***
 
+## Design
+
+### Colours
+The background image gave me a lot of green and blue. I used only black color with different opacity levels and white color for the text.
+
+### Typography
+In this project I used google fonts. ***Lumanosimo*** font used for headings and ***Roboto*** font used for the body text.
+
+### Site Structure
+The website has only one html page and instead of more html pages using divs as windows. Showing and hiding different divs with help of css and javascript. It has 5 different windows and score tracking div which appears under the game window.
+
 ## Technologies Used
 - HTML
 - CSS
@@ -54,7 +65,7 @@ HTML code was validated with the W3C Markup Validation Service and no errors fou
 ![HTML Checker](assets/images/readme/html_checker.png)
 
 ### JS Validation
-Javascript code validated with JSHint, had few missing semicolons and a lot of warnings for using **let** and **const**.
+Javascript code validated with JSHint, had few missing semicolons and a lot of warnings for using ***let*** and ***const***.
 
 ### Google Lighthouse
 
@@ -62,7 +73,7 @@ Javascript code validated with JSHint, had few missing semicolons and a lot of w
 
 ### Resolved bugs/issues
 
-- Had issues with white space at the bottom of the page, the background did not cover the entire screen. Fixed it by adding **background-size: cover** and **background: fixed**.
+- Had issues with white space at the bottom of the page, the background did not cover the entire screen. Fixed it by adding ***background-size: cover*** and ***background: fixed***.
 
 ### Unresolved bugs/issues
 
