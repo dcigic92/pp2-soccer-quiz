@@ -29,14 +29,13 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     height: 15%;
 }
 
 h2 {
     font-size: 3rem;
-    height: 25%;
-    margin: 0 2%;
+    margin: 5% 5%;
 }
 
 /* Shared styles */
@@ -65,7 +64,7 @@ h2 {
 }
 
 .main-container > p {
-    margin: 0 10% 5% 10%;
+    margin-bottom: 5%;
 }
 
 .btn {
@@ -82,7 +81,7 @@ h2 {
     height: 10%;
     width: 45%;
     display: block;
-    margin: 2.5% auto;
+    margin: 1.5% auto;
 }
 
 /* Game window */
@@ -103,7 +102,7 @@ h2 {
     cursor: pointer;
 }
 
-#QuestionInfo {
+#question-info {
     font-size: 2rem;
     width: fit-content;
     color: white;
@@ -178,28 +177,21 @@ h2 {
 @media screen and (max-width: 768px) {
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
 
     h2 {
         font-size: 2.5rem;
-    }
-
-    #instructions-window > h2 {
-        height: 20%;
+        margin: 8% 5%;
     }
 
     .main-container > p {
-        margin: 0 10% 8% 10%;
+        margin-bottom: 8%;
     }
 
     .menu-btn {
         font-size: 1.8rem;
         width: 50%;
-    }
-
-    #QuestionInfo {
-        left: 4%;
     }
 
     #question {
@@ -226,6 +218,14 @@ h2 {
 /* For small screen sizes from 480px wide and down */
 @media screen and (max-width: 480px) {
 
+    h2 {
+        margin: 10% 5%;
+    }
+
+    .main-container > p {
+        margin-bottom: 10%;
+    }
+
     .main-container {
         width: 80%;
     }
@@ -239,10 +239,6 @@ h2 {
         padding: 20% 0 10% 0;
     }
 
-    #QuestionInfo {
-        font-size: 1.8rem;
-    }
-
     .scores {
         font-size: 1.8rem;
         display: block;
@@ -253,22 +249,27 @@ h2 {
     #instructions-list {
         margin-bottom: 8%;
     }
+
+    #instructions-list > li {
+        margin: 0 10% 8% 10%;
+    }
 }
 
 /* For very small screen sizes from 300px wide and down */
 @media screen and (max-width: 300px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
     h2 {
         font-size: 2rem;
+        margin: 12.5% 5%;
     }
 
     .main-container > p {
         font-size: 1.8rem;
-        margin: 2.5% 10% 10% 10%;
+        margin-bottom: 12.5%;
     }
 
     #question {

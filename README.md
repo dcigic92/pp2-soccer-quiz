@@ -80,7 +80,7 @@ The website has only one html page and instead of more html pages using divs as 
 - If selected button is correct answer, next 0.4 seconds will be green and if is wrong it will be red.
 - Under the game window there are correct and wrong scores.
 
-![Intro window](assets/images/readme/game_window.png)
+![Game window](assets/images/readme/game_window.png)
 
 ### Game over window
 - Game over window has game over message and final score message.
