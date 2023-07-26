@@ -8,6 +8,38 @@
 
 ***
 
+## Contents
+
+- [User experience](#user-experience)
+    - [Project goals](#project-goals)
+    - [User stories](#user-stories)
+- [Design](#design)
+    - [Colours](#colours)
+    - [Typography](#typography)
+    - [Site Structure](#site-structure)
+- [Features](#features)
+    - [Heading](#heading)
+    - [Intro window](#intro-window)
+    - [Game window](#game-window)
+    - [Game over window](#game-over-window)
+    - [Instructions window](#instructions-window)
+    - [Highest score window](#highest-score-window)
+    - [Features left to implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [CSS Validation](#css-validation)
+    - [HTML Validation](#html-validation)
+    - [JS Validation](#js-validation)
+    - [Google Lighthouse](#google-lighthouse)
+    - [Resolved bugs/issues](#resolved-bugsissues)
+    - [Unresolved bugs/issues](#unresolved-bugsissues)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Images](#images)
+    - [Code](#code)
+- [Acknowledgements](#acknowledgements)
+
 ## User experience
 
 ### Project goals
