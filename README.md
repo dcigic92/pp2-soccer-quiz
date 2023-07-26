@@ -23,6 +23,51 @@
 - [Convertio.co](https://convertio.co/)
 - [Am I responsive](https://amiresponsive.co.uk/)
 
+## Testing
+
+### Manual testing
+
+- User testing
+    - Tested by 4 persons to get some general feedback.
+
+- Devices
+    - Tested on 7 different devices.
+
+- Browsers
+    - Tested in Google Chrome, Firefox and Microsoft Edge.
+
+- Responsiveness
+    - Tested on all available devices in Chrome DevTools.
+
+### CSS Validation
+CSS code was validated with the W3C Jigsaw CSS Validation Service and no errors found.
+<p>
+    <a href="#">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+### HTML Validation
+HTML code was validated with the W3C Markup Validation Service and no errors found.
+![HTML Checker](assets/images/readme/html_checker.png)
+
+### JS Validation
+Javascript code validated with JSHint, had few missing semicolons and a lot of warnings for using **let** and **const**.
+
+### Google Lighthouse
+
+![Google Lighthouse index page](assets/images/readme/lighthouse.png)
+
+### Resolved bugs/issues
+
+- Had issues with white space at the bottom of the page, the background did not cover the entire screen. Fixed it by adding **background-size: cover** and **background: fixed**.
+
+### Unresolved bugs/issues
+
+- No unresolved issues.
+
 ## Deployment
 
 To deploy the website I used GitHub pages and followed these steps:

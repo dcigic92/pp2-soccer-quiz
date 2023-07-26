@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of homeButtons) {
         button.addEventListener("click", function() {
             window.location.reload(); // On click reloads page
-        })
+        });
     }
 
     for (let button of menuButtons) {
@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 openInstructionsWindow();
             } else if (this.getAttribute("id") === "highest-score-btn") {
                 openHighestScoreWindow();
-            };
-        })
+            }
+        });
     }
-})
+});
 
 /**
  * Opens game window and scores.
@@ -61,7 +61,7 @@ function openHighestScoreWindow() {
  * Adds event listener to each button.
  */
 function displayQuestion() {
-    incrementQuestionCounter()
+    incrementQuestionCounter();
     let randomIndex = Math.floor(Math.random() * questionsList.length);
     document.getElementById("question").src = questionsList[randomIndex].q;
     let buttons = document.getElementsByClassName("answer-btn");
@@ -103,7 +103,7 @@ function checkAnswer(event) {
 
     disableButtons();
 
-    const questionCounter = parseInt(document.getElementById("question-counter").innerText)
+    const questionCounter = parseInt(document.getElementById("question-counter").innerText);
     if (questionCounter === 10) {
         setTimeout(gameOver, 1500);
     } else {
