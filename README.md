@@ -19,6 +19,47 @@ In this project I used google fonts. ***Lumanosimo*** font used for headings and
 ### Site Structure
 The website has only one html page and instead of more html pages using divs as windows. Showing and hiding different divs with help of css and javascript. It has 5 different windows and score tracking div which appears under the game window.
 
+## Features
+
+### Heading
+- heading is always on the top of the page.
+
+![Heading](assets/images/readme/heading.png)
+
+### Intro window
+- Home/landing window with welcome message and 3 buttons.
+
+![Intro window](assets/images/readme/intro_window.png)
+
+### Game window
+- Game window has question counter in top left corner and exit button in top right corner.
+- Quiz question is random national team logo and under the question are 4 answer buttons.
+- If selected button is correct answer for 0.4 seconds will become green and if is wrong answer it will become red.
+- Under the game window are correct and wrong scores.
+
+![Intro window](assets/images/readme/game_window.png)
+
+### Game over window
+- Game over window has game over message and final score message.
+- Under the final score message there is home button.
+
+![Intro window](assets/images/readme/game_over_window.png)
+
+### Instructions window
+- Instructions window has heading and list of instructions.
+- Under the list there is home button.
+
+![Intro window](assets/images/readme/instructions_window.png)
+
+### Highest score window
+- Highest score window has heading and highest score saved.
+- Under the score there is home button.
+
+![Intro window](assets/images/readme/highest_score_window.png)
+
+### Features left to implement
+- More options like club logos, stadiums or history questions.
+
 ## Technologies Used
 - HTML
 - CSS
