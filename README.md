@@ -8,6 +8,31 @@
 
 ***
 
+## Technologies Used
+- HTML
+- CSS
+- Javascript
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+- [Google fonts](https://fonts.google.com/)
+- [Favicon.io](https://favicon.io/)
+- [Convertio.co](https://convertio.co/)
+- [Am I responsive](https://amiresponsive.co.uk/)
+
+## Deployment
+
+To deploy the website I used GitHub pages and followed these steps:
+
+1. Open your *repository*.
+2. Click on *settings* in the *navigation menu*.
+3. Under *code and automation* choose *pages*.
+4. Select the *main branch* and *save*.
+5. Refresh a few times and the link to your website should appear shortly.
+
 ## Credits
 
 ### Images 
